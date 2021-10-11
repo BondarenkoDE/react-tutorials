@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.profile {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border: 6px solid rgb(189, 189, 189);
+  border-radius: 10px;
+}
+
+.profile:first-child {
+  margin-bottom: 20px;
+}
