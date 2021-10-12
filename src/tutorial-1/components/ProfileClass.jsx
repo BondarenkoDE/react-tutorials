@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
 class ProfileClass extends Component {
-  constructor(props) {
-    super(props);
-    this.getName = this.getName.bind(this);
-    this.calcDate = this.calcDate.bind(this);
-  }
-
   getName = () => {
+    if (!this.props.name) {
+      return 'Неверное имя';
+    }
     return this.props.name.split(' ')[0];
   };
 
   calcDate = () => {
+    if (!this.props.registredAt) {
+      return 'Неверная дата';
+    }
     return `
     ${this.props.registredAt.toLocaleDateString('ru-RU', {
       day: 'numeric',
